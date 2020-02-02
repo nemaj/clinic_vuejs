@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+
+  semicolon-clinic-v2-front-end:
+    container_name: semicolon-clinic-v2-front-end
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - '8081:8080'
+

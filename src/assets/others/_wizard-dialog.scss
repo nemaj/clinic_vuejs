@@ -1,0 +1,64 @@
+.content-value {
+  .subtitle {
+    color: rgba(0,0,0,0.87);
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .content-group {
+    > label {
+      color: rgba(0,0,0,.87);
+      font-weight: bold;
+      font-size: 14px;
+    }
+    > p {
+      color: rgba(0,0,0,.87);
+      font-size: 14px;
+      opacity: .7;
+      text-indent: 25px;
+      text-align: justify;
+      text-justify: inter-word;
+      &.not-normal {
+        opacity: .8;
+        color: red;
+      }
+    }
+    .attention-icon {
+      color: red;
+      font-size: 14px;
+      margin-left: 3px;
+    }
+  }
+  .content-separator {
+    border-top: 1px solid #ddd;
+  }
+  > .content-item {
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  > .split {
+    display: flex;
+    width: 100%;
+    > div {
+      &:first-child {
+        margin-right: 20px;
+        flex-grow: 1;
+        width: 100%;
+      }
+      &:last-child {
+        margin-left: 20px;
+        flex-grow: 1;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.table td.custom-forms {
+  width: 100px;
+  &.usage {
+    // width: 420px;
+    width: 400px;
+  }
+}
